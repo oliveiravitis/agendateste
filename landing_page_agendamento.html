@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende sua Consultoria Gratuita</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo Placeholder -->
+                    <span class="text-2xl font-bold text-brand-600 tracking-tight">SuaEmpresa</span>
+                </div>
+                <div>
+                    <a href="#agendamento" class="inline-flex items-center justify-center px-5 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm">
+                        Agendar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32 lg:pb-24">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block">Agende sua</span>
+                <span class="block text-brand-600">Consultoria Gratuita</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500 sm:text-xl">
+                Converse com nossos especialistas e descubra estratégias personalizadas para escalar os resultados do seu negócio de forma inteligente e previsível.
+            </p>
+            <div class="mt-8 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
+                <a href="#agendamento" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                    Ver Horários Disponíveis
+                </a>
+                <a href="#beneficios" class="mt-3 w-full flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg transition-colors sm:mt-0 shadow-sm">
+                    Como funciona?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base font-semibold text-brand-600 tracking-wide uppercase">Por que agendar?</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Uma conversa focada no seu sucesso
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Benefício 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 transition-shadow hover:shadow-md">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-brand-100 text-brand-600 mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Atendimento Personalizado</h3>
+                        <p class="text-gray-500">Nossos vendedores analisam o seu cenário específico para propor soluções que realmente fazem sentido para o seu momento atual.</p>
+                    </div>
+
+                    <!-- Benefício 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 transition-shadow hover:shadow-md">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-brand-100 text-brand-600 mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Estratégias Comprovadas</h3>
+                        <p class="text-gray-500">Acesse metodologias de mercado já validadas. Saia da reunião com um plano de ação claro para os próximos passos da sua empresa.</p>
+                    </div>
+
+                    <!-- Benefício 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 transition-shadow hover:shadow-md">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-lg bg-brand-100 text-brand-600 mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Sem Compromisso</h3>
+                        <p class="text-gray-500">Uma avaliação honesta e transparente. Se não formos a melhor solução para você agora, indicaremos o melhor caminho.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento / Calendário Section -->
+    <section id="agendamento" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Escolha o Melhor Horário
+                </h2>
+                <p class="mt-4 text-lg text-gray-500">
+                    Selecione uma data e horário abaixo para reservar seu espaço diretamente na agenda do nosso time.
+                </p>
+            </div>
+
+            <!-- Área de Incorporação do Google Agenda -->
+            <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden min-h-[600px] flex items-center justify-center relative w-full">
+                
+                <iframe src="https://calendar.google.com/calendar/u/0/r?pli=1" style="border: 0" width="100%" height="600" frameborder="0" scrolling="yes" class="w-full h-full min-h-[600px]"></iframe>
+
+            </div>
+            
+            <div class="mt-6 flex items-center justify-center text-sm text-gray-500">
+                <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                Seus dados estão protegidos.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white tracking-tight">SuaEmpresa</span>
+                </div>
+                <div class="flex justify-center space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Termos de Uso</span>
+                        Termos
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Privacidade</span>
+                        Privacidade
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Contato</span>
+                        Contato
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-8 md:flex md:items-center md:justify-between">
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1 text-center md:text-left">
+                    &copy; 2024 SuaEmpresa Inc. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
